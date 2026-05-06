@@ -5,7 +5,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Agroecologia",
       "area": "Agro, Alimentos e Sustentabilidade",
       "icon": "🌱",
-      "summary": "Agroecologia: Combina tecnologia, produção, sustentabilidade e oportunidades ligadas ao campo, alimentos e cadeias produtivas.",
+      "summary": "Agroecologia: Produção rural sustentável, cuidado com o solo, meio ambiente e sistemas agroecológicos.",
       "vibes": [
         "Conexão com o campo",
         "Sustentabilidade",
@@ -46,7 +46,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Agroindústria",
       "area": "Agro, Alimentos e Sustentabilidade",
       "icon": "🌱",
-      "summary": "Agroindústria: Combina tecnologia, produção, sustentabilidade e oportunidades ligadas ao campo, alimentos e cadeias produtivas.",
+      "summary": "Agroindústria: Transformação de produtos do campo em alimentos e produtos com valor agregado.",
       "vibes": [
         "Conexão com o campo",
         "Sustentabilidade",
@@ -82,7 +82,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Alimentos",
       "area": "Agro, Alimentos e Sustentabilidade",
       "icon": "🌱",
-      "summary": "Alimentos: Combina tecnologia, produção, sustentabilidade e oportunidades ligadas ao campo, alimentos e cadeias produtivas.",
+      "summary": "Alimentos: Produção, conservação, qualidade e segurança dos alimentos.",
       "vibes": [
         "Conexão com o campo",
         "Sustentabilidade",
@@ -117,7 +117,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Aquicultura",
       "area": "Agro, Alimentos e Sustentabilidade",
       "icon": "🌱",
-      "summary": "Aquicultura: Combina tecnologia, produção, sustentabilidade e oportunidades ligadas ao campo, alimentos e cadeias produtivas.",
+      "summary": "Aquicultura: Criação de peixes e organismos aquáticos, manejo de viveiros e qualidade da água.",
       "vibes": [
         "Conexão com o campo",
         "Sustentabilidade",
@@ -153,7 +153,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Fruticultura",
       "area": "Agro, Alimentos e Sustentabilidade",
       "icon": "🌱",
-      "summary": "Fruticultura: Combina tecnologia, produção, sustentabilidade e oportunidades ligadas ao campo, alimentos e cadeias produtivas.",
+      "summary": "Fruticultura: Cultivo de frutas, manejo de pomares, colheita e comercialização da produção.",
       "vibes": [
         "Conexão com o campo",
         "Sustentabilidade",
@@ -188,7 +188,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Gestão do Agronegócio",
       "area": "Agro, Alimentos e Sustentabilidade",
       "icon": "🌱",
-      "summary": "Gestão do Agronegócio: Combina tecnologia, produção, sustentabilidade e oportunidades ligadas ao campo, alimentos e cadeias produtivas.",
+      "summary": "Gestão do Agronegócio: Planejamento, custos, vendas e gestão de propriedades e empresas rurais.",
       "vibes": [
         "Conexão com o campo",
         "Sustentabilidade",
@@ -230,7 +230,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Laticínios",
       "area": "Agro, Alimentos e Sustentabilidade",
       "icon": "🌱",
-      "summary": "Laticínios: Combina tecnologia, produção, sustentabilidade e oportunidades ligadas ao campo, alimentos e cadeias produtivas.",
+      "summary": "Laticínios: Processamento de leite, queijos e derivados, com controle de qualidade e segurança.",
       "vibes": [
         "Conexão com o campo",
         "Sustentabilidade",
@@ -265,7 +265,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Produção de Grãos",
       "area": "Agro, Alimentos e Sustentabilidade",
       "icon": "🌱",
-      "summary": "Produção de Grãos: Combina tecnologia, produção, sustentabilidade e oportunidades ligadas ao campo, alimentos e cadeias produtivas.",
+      "summary": "Produção de Grãos: Cultivo, colheita, armazenamento e comercialização de grãos.",
       "vibes": [
         "Conexão com o campo",
         "Sustentabilidade",
@@ -302,7 +302,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Gestão Comercial",
       "area": "Gestão, Negócios e Serviços",
       "icon": "🚀",
-      "summary": "Gestão Comercial: Boa escolha para quem se imagina organizando processos, liderando equipes, planejando vendas, logística, pessoas ou projetos.",
+      "summary": "Gestão Comercial: Vendas, atendimento, negociação, marketing e gestão de equipes comerciais.",
       "vibes": [
         "Organização",
         "Liderança",
@@ -342,7 +342,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Gestão Pública",
       "area": "Gestão, Negócios e Serviços",
       "icon": "🚀",
-      "summary": "Gestão Pública: Boa escolha para quem se imagina organizando processos, liderando equipes, planejando vendas, logística, pessoas ou projetos.",
+      "summary": "Gestão Pública: Planejamento, orçamento, serviços públicos e gestão de projetos em órgãos públicos.",
       "vibes": [
         "Organização",
         "Liderança",
@@ -376,7 +376,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Gestão de Recursos Humanos",
       "area": "Gestão, Negócios e Serviços",
       "icon": "🚀",
-      "summary": "Gestão de Recursos Humanos: Boa escolha para quem se imagina organizando processos, liderando equipes, planejando vendas, logística, pessoas ou projetos.",
+      "summary": "Gestão de Recursos Humanos: Recrutamento, treinamento, rotinas trabalhistas e cuidado com pessoas nas organizações.",
       "vibes": [
         "Organização",
         "Liderança",
@@ -416,7 +416,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Logística",
       "area": "Gestão, Negócios e Serviços",
       "icon": "🚀",
-      "summary": "Logística: Boa escolha para quem se imagina organizando processos, liderando equipes, planejando vendas, logística, pessoas ou projetos.",
+      "summary": "Logística: Transporte, estoque, compras, distribuição e controle de entregas.",
       "vibes": [
         "Organização",
         "Liderança",
@@ -456,7 +456,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Marketing",
       "area": "Gestão, Negócios e Serviços",
       "icon": "🚀",
-      "summary": "Marketing: Boa escolha para quem se imagina organizando processos, liderando equipes, planejando vendas, logística, pessoas ou projetos.",
+      "summary": "Marketing: Pesquisa de mercado, comunicação, redes sociais, marcas e estratégias de venda.",
       "vibes": [
         "Organização",
         "Liderança",
@@ -490,7 +490,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Processos Gerenciais",
       "area": "Gestão, Negócios e Serviços",
       "icon": "🚀",
-      "summary": "Processos Gerenciais: Boa escolha para quem se imagina organizando processos, liderando equipes, planejando vendas, logística, pessoas ou projetos.",
+      "summary": "Processos Gerenciais: Gestão de empresas, processos, pessoas, finanças e melhoria de resultados.",
       "vibes": [
         "Organização",
         "Liderança",
@@ -530,7 +530,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Automação Industrial",
       "area": "Indústria, Manutenção e Produção",
       "icon": "⚙️",
-      "summary": "Automação Industrial: Para quem curte máquinas, processos produtivos, manutenção, automação, eletrônica e soluções industriais.",
+      "summary": "Automação Industrial: Programação de máquinas, sensores, controle de processos e sistemas automatizados.",
       "vibes": [
         "Mão na massa",
         "Precisão",
@@ -565,7 +565,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Eletrotécnica Industrial",
       "area": "Indústria, Manutenção e Produção",
       "icon": "⚙️",
-      "summary": "Eletrotécnica Industrial: Para quem curte máquinas, processos produtivos, manutenção, automação, eletrônica e soluções industriais.",
+      "summary": "Eletrotécnica Industrial: Instalação e manutenção de sistemas elétricos, motores, painéis e comandos industriais.",
       "vibes": [
         "Mão na massa",
         "Precisão",
@@ -599,7 +599,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Eletrônica Industrial",
       "area": "Indústria, Manutenção e Produção",
       "icon": "⚙️",
-      "summary": "Eletrônica Industrial: Para quem curte máquinas, processos produtivos, manutenção, automação, eletrônica e soluções industriais.",
+      "summary": "Eletrônica Industrial: Manutenção de circuitos, sensores, equipamentos eletrônicos e automação industrial.",
       "vibes": [
         "Mão na massa",
         "Precisão",
@@ -633,7 +633,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Gestão da Produção Industrial",
       "area": "Indústria, Manutenção e Produção",
       "icon": "⚙️",
-      "summary": "Gestão da Produção Industrial: Para quem curte máquinas, processos produtivos, manutenção, automação, eletrônica e soluções industriais.",
+      "summary": "Gestão da Produção Industrial: Organização de processos, equipes, materiais, qualidade e produtividade nas indústrias.",
       "vibes": [
         "Mão na massa",
         "Precisão",
@@ -668,7 +668,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Manutenção Industrial",
       "area": "Indústria, Manutenção e Produção",
       "icon": "⚙️",
-      "summary": "Manutenção Industrial: Para quem curte máquinas, processos produtivos, manutenção, automação, eletrônica e soluções industriais.",
+      "summary": "Manutenção Industrial: Manutenção de máquinas, equipamentos, linhas de produção e serviços industriais.",
       "vibes": [
         "Mão na massa",
         "Precisão",
@@ -702,7 +702,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Manutenção de Aeronaves",
       "area": "Indústria, Manutenção e Produção",
       "icon": "⚙️",
-      "summary": "Manutenção de Aeronaves: Para quem curte máquinas, processos produtivos, manutenção, automação, eletrônica e soluções industriais.",
+      "summary": "Manutenção de Aeronaves: Inspeção, manutenção e segurança de aeronaves em oficinas e empresas do setor aéreo.",
       "vibes": [
         "Mão na massa",
         "Precisão",
@@ -736,7 +736,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Mecânica de Precisão",
       "area": "Indústria, Manutenção e Produção",
       "icon": "⚙️",
-      "summary": "Mecânica de Precisão: Para quem curte máquinas, processos produtivos, manutenção, automação, eletrônica e soluções industriais.",
+      "summary": "Mecânica de Precisão: Fabricação e ajuste de peças, medições técnicas e operação de máquinas de precisão.",
       "vibes": [
         "Mão na massa",
         "Precisão",
@@ -770,7 +770,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Produção Têxtil",
       "area": "Indústria, Manutenção e Produção",
       "icon": "⚙️",
-      "summary": "Produção Têxtil: Para quem curte máquinas, processos produtivos, manutenção, automação, eletrônica e soluções industriais.",
+      "summary": "Produção Têxtil: Processos de fabricação de tecidos, controle de qualidade e produção na indústria têxtil.",
       "vibes": [
         "Mão na massa",
         "Precisão",
@@ -802,9 +802,9 @@ export const GUIDE_DATA = {
     {
       "id": "tecnologia-em-biocombustiveis",
       "title": "Tecnologia em Biocombustíveis",
-      "area": "Outras Trilhas",
+      "area": "Construção, Energia e Segurança",
       "icon": "✨",
-      "summary": "Biocombustíveis: Uma opção para explorar novas possibilidades profissionais com formação aplicada ao mundo do trabalho.",
+      "summary": "Biocombustíveis: Produção de etanol, biodiesel e energia limpa a partir de matérias-primas renováveis.",
       "vibes": [
         "Exploração",
         "Novas ideias",
@@ -833,9 +833,9 @@ export const GUIDE_DATA = {
     {
       "id": "tecnologia-em-construcao-de-edificios",
       "title": "Tecnologia em Construção de Edifícios",
-      "area": "Outras Trilhas",
+      "area": "Construção, Energia e Segurança",
       "icon": "✨",
-      "summary": "Construção de Edifícios: Uma opção para explorar novas possibilidades profissionais com formação aplicada ao mundo do trabalho.",
+      "summary": "Construção de Edifícios: Planejamento de obras, leitura de projetos, materiais e execução de construções.",
       "vibes": [
         "Exploração",
         "Novas ideias",
@@ -864,9 +864,9 @@ export const GUIDE_DATA = {
     {
       "id": "tecnologia-em-controle-de-obras",
       "title": "Tecnologia em Controle de Obras",
-      "area": "Outras Trilhas",
+      "area": "Construção, Energia e Segurança",
       "icon": "✨",
-      "summary": "Controle de Obras: Uma opção para explorar novas possibilidades profissionais com formação aplicada ao mundo do trabalho.",
+      "summary": "Controle de Obras: Acompanhamento de obras, custos, cronogramas, materiais e qualidade da construção.",
       "vibes": [
         "Exploração",
         "Novas ideias",
@@ -895,9 +895,9 @@ export const GUIDE_DATA = {
     {
       "id": "tecnologia-em-energias-renovaveis",
       "title": "Tecnologia em Energias Renováveis",
-      "area": "Outras Trilhas",
+      "area": "Construção, Energia e Segurança",
       "icon": "✨",
-      "summary": "Energias Renováveis: Uma opção para explorar novas possibilidades profissionais com formação aplicada ao mundo do trabalho.",
+      "summary": "Energias Renováveis: Instalação, operação e manutenção de sistemas solares, eólicos e outras fontes limpas.",
       "vibes": [
         "Exploração",
         "Novas ideias",
@@ -926,9 +926,9 @@ export const GUIDE_DATA = {
     {
       "id": "tecnologia-em-gestao-da-qualidade",
       "title": "Tecnologia em Gestão da Qualidade",
-      "area": "Outras Trilhas",
+      "area": "Gestão, Negócios e Serviços",
       "icon": "✨",
-      "summary": "Gestão da Qualidade: Uma opção para explorar novas possibilidades profissionais com formação aplicada ao mundo do trabalho.",
+      "summary": "Gestão da Qualidade: Controle de processos, normas, auditorias e melhoria da qualidade em empresas.",
       "vibes": [
         "Exploração",
         "Novas ideias",
@@ -957,9 +957,9 @@ export const GUIDE_DATA = {
     {
       "id": "tecnologia-em-gestao-de-energia-e-eficiencia-energetica",
       "title": "Tecnologia em Gestão de Energia e Eficiência Energética",
-      "area": "Outras Trilhas",
+      "area": "Construção, Energia e Segurança",
       "icon": "✨",
-      "summary": "Gestão de Energia e Eficiência Energética: Uma opção para explorar novas possibilidades profissionais com formação aplicada ao mundo do trabalho.",
+      "summary": "Gestão de Energia e Eficiência Energética: Uso eficiente de energia, redução de desperdícios e gestão de sistemas energéticos.",
       "vibes": [
         "Exploração",
         "Novas ideias",
@@ -988,9 +988,9 @@ export const GUIDE_DATA = {
     {
       "id": "tecnologia-em-horticultura",
       "title": "Tecnologia em Horticultura",
-      "area": "Outras Trilhas",
+      "area": "Agro, Alimentos e Sustentabilidade",
       "icon": "✨",
-      "summary": "Horticultura: Uma opção para explorar novas possibilidades profissionais com formação aplicada ao mundo do trabalho.",
+      "summary": "Horticultura: Cultivo de hortaliças, manejo de canteiros, produção protegida e comercialização.",
       "vibes": [
         "Exploração",
         "Novas ideias",
@@ -1019,9 +1019,9 @@ export const GUIDE_DATA = {
     {
       "id": "tecnologia-em-producao-sucroalcooleira",
       "title": "Tecnologia em Produção Sucroalcooleira",
-      "area": "Outras Trilhas",
+      "area": "Agro, Alimentos e Sustentabilidade",
       "icon": "✨",
-      "summary": "Produção Sucroalcooleira: Uma opção para explorar novas possibilidades profissionais com formação aplicada ao mundo do trabalho.",
+      "summary": "Produção Sucroalcooleira: Produção de açúcar, etanol e derivados, com controle de processos industriais.",
       "vibes": [
         "Exploração",
         "Novas ideias",
@@ -1050,9 +1050,9 @@ export const GUIDE_DATA = {
     {
       "id": "tecnologia-em-seguranca-do-trabalho",
       "title": "Tecnologia em Segurança do Trabalho",
-      "area": "Outras Trilhas",
+      "area": "Construção, Energia e Segurança",
       "icon": "✨",
-      "summary": "Segurança do Trabalho: Uma opção para explorar novas possibilidades profissionais com formação aplicada ao mundo do trabalho.",
+      "summary": "Segurança do Trabalho: Prevenção de acidentes, normas de segurança, saúde ocupacional e análise de riscos.",
       "vibes": [
         "Exploração",
         "Novas ideias",
@@ -1083,7 +1083,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Estética e Cosmética",
       "area": "Saúde, Bem-estar e Estética",
       "icon": "🩺",
-      "summary": "Estética e Cosmética: Voltado a quem tem interesse em cuidado, bem-estar, tecnologias da saúde, atendimento e qualidade de vida.",
+      "summary": "Estética e Cosmética: Procedimentos estéticos, cosméticos, atendimento ao cliente e cuidados com bem-estar.",
       "vibes": [
         "Cuidado",
         "Atenção aos detalhes",
@@ -1118,7 +1118,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Gestão Hospitalar",
       "area": "Saúde, Bem-estar e Estética",
       "icon": "🩺",
-      "summary": "Gestão Hospitalar: Voltado a quem tem interesse em cuidado, bem-estar, tecnologias da saúde, atendimento e qualidade de vida.",
+      "summary": "Gestão Hospitalar: Organização de serviços de saúde, equipes, materiais, atendimento e processos hospitalares.",
       "vibes": [
         "Cuidado",
         "Atenção aos detalhes",
@@ -1153,7 +1153,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Oftálmica",
       "area": "Saúde, Bem-estar e Estética",
       "icon": "🩺",
-      "summary": "Oftálmica: Voltado a quem tem interesse em cuidado, bem-estar, tecnologias da saúde, atendimento e qualidade de vida.",
+      "summary": "Oftálmica: Apoio em exames, lentes, equipamentos oftálmicos e atendimento em serviços de visão.",
       "vibes": [
         "Cuidado",
         "Atenção aos detalhes",
@@ -1188,7 +1188,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Podologia",
       "area": "Saúde, Bem-estar e Estética",
       "icon": "🩺",
-      "summary": "Podologia: Voltado a quem tem interesse em cuidado, bem-estar, tecnologias da saúde, atendimento e qualidade de vida.",
+      "summary": "Podologia: Cuidados com os pés, prevenção de problemas, atendimento e procedimentos podológicos.",
       "vibes": [
         "Cuidado",
         "Atenção aos detalhes",
@@ -1223,7 +1223,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Radiologia",
       "area": "Saúde, Bem-estar e Estética",
       "icon": "🩺",
-      "summary": "Radiologia: Voltado a quem tem interesse em cuidado, bem-estar, tecnologias da saúde, atendimento e qualidade de vida.",
+      "summary": "Radiologia: Operação de equipamentos de imagem, posicionamento de pacientes e apoio ao diagnóstico.",
       "vibes": [
         "Cuidado",
         "Atenção aos detalhes",
@@ -1256,9 +1256,9 @@ export const GUIDE_DATA = {
     {
       "id": "tecnologia-em-agrocomputacao",
       "title": "Tecnologia em Agrocomputação",
-      "area": "Tecnologia e Programação",
+      "area": "Agro, Alimentos e Sustentabilidade",
       "icon": "💻",
-      "summary": "Agrocomputação: Ideal para quem gosta de resolver problemas, criar soluções digitais, mexer com dados, sistemas, redes ou inovação.",
+      "summary": "Agrocomputação: Tecnologia aplicada ao campo, dados agrícolas, sistemas digitais e inovação no agronegócio.",
       "vibes": [
         "Criativo digital",
         "Curte desafios lógicos",
@@ -1296,7 +1296,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Análise e Desenvolvimento de Sistemas",
       "area": "Tecnologia e Programação",
       "icon": "💻",
-      "summary": "Análise e Desenvolvimento de Sistemas: Ideal para quem gosta de resolver problemas, criar soluções digitais, mexer com dados, sistemas, redes ou inovação.",
+      "summary": "Análise e Desenvolvimento de Sistemas: Criação de sistemas, aplicativos, sites, lógica de programação e bancos de dados.",
       "vibes": [
         "Criativo digital",
         "Curte desafios lógicos",
@@ -1331,7 +1331,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Banco de Dados",
       "area": "Tecnologia e Programação",
       "icon": "💻",
-      "summary": "Banco de Dados: Ideal para quem gosta de resolver problemas, criar soluções digitais, mexer com dados, sistemas, redes ou inovação.",
+      "summary": "Banco de Dados: Organização, consulta, segurança e análise de dados para empresas e sistemas.",
       "vibes": [
         "Criativo digital",
         "Curte desafios lógicos",
@@ -1367,7 +1367,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Gestão da Tecnologia da Informação",
       "area": "Tecnologia e Programação",
       "icon": "💻",
-      "summary": "Gestão da Tecnologia da Informação: Ideal para quem gosta de resolver problemas, criar soluções digitais, mexer com dados, sistemas, redes ou inovação.",
+      "summary": "Gestão da Tecnologia da Informação: Planejamento de tecnologia, suporte, projetos, equipes e sistemas de informação.",
       "vibes": [
         "Criativo digital",
         "Curte desafios lógicos",
@@ -1403,7 +1403,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Inteligência Artificial",
       "area": "Tecnologia e Programação",
       "icon": "💻",
-      "summary": "Inteligência Artificial: Ideal para quem gosta de resolver problemas, criar soluções digitais, mexer com dados, sistemas, redes ou inovação.",
+      "summary": "Inteligência Artificial: Dados, algoritmos, automação e criação de soluções inteligentes para diferentes áreas.",
       "vibes": [
         "Criativo digital",
         "Curte desafios lógicos",
@@ -1437,7 +1437,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Internet das Coisas",
       "area": "Tecnologia e Programação",
       "icon": "💻",
-      "summary": "Internet das Coisas: Ideal para quem gosta de resolver problemas, criar soluções digitais, mexer com dados, sistemas, redes ou inovação.",
+      "summary": "Internet das Coisas: Sensores, dispositivos conectados, automação e integração entre equipamentos e sistemas.",
       "vibes": [
         "Criativo digital",
         "Curte desafios lógicos",
@@ -1471,7 +1471,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Redes de Computadores",
       "area": "Tecnologia e Programação",
       "icon": "💻",
-      "summary": "Redes de Computadores: Ideal para quem gosta de resolver problemas, criar soluções digitais, mexer com dados, sistemas, redes ou inovação.",
+      "summary": "Redes de Computadores: Instalação, configuração, segurança e manutenção de redes e internet em organizações.",
       "vibes": [
         "Criativo digital",
         "Curte desafios lógicos",
@@ -1505,7 +1505,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Segurança da Informação",
       "area": "Tecnologia e Programação",
       "icon": "💻",
-      "summary": "Segurança da Informação: Ideal para quem gosta de resolver problemas, criar soluções digitais, mexer com dados, sistemas, redes ou inovação.",
+      "summary": "Segurança da Informação: Proteção de dados, redes, sistemas, prevenção de ataques e segurança digital.",
       "vibes": [
         "Criativo digital",
         "Curte desafios lógicos",
@@ -1537,9 +1537,9 @@ export const GUIDE_DATA = {
     {
       "id": "tecnologia-em-sistemas-biomedicos",
       "title": "Tecnologia em Sistemas Biomédicos",
-      "area": "Tecnologia e Programação",
+      "area": "Saúde, Bem-estar e Estética",
       "icon": "💻",
-      "summary": "Sistemas Biomédicos: Ideal para quem gosta de resolver problemas, criar soluções digitais, mexer com dados, sistemas, redes ou inovação.",
+      "summary": "Sistemas Biomédicos: Tecnologia para equipamentos de saúde, manutenção, suporte e uso em hospitais.",
       "vibes": [
         "Criativo digital",
         "Curte desafios lógicos",
@@ -1574,7 +1574,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Sistemas Embarcados",
       "area": "Tecnologia e Programação",
       "icon": "💻",
-      "summary": "Sistemas Embarcados: Ideal para quem gosta de resolver problemas, criar soluções digitais, mexer com dados, sistemas, redes ou inovação.",
+      "summary": "Sistemas Embarcados: Programação de dispositivos, placas eletrônicas, sensores e sistemas inteligentes.",
       "vibes": [
         "Criativo digital",
         "Curte desafios lógicos",
@@ -1628,7 +1628,7 @@ export const GUIDE_DATA = {
     "Agro, Alimentos e Sustentabilidade",
     "Gestão, Negócios e Serviços",
     "Indústria, Manutenção e Produção",
-    "Outras Trilhas",
+    "Construção, Energia e Segurança",
     "Saúde, Bem-estar e Estética",
     "Tecnologia e Programação"
   ],

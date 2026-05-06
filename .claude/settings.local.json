@@ -5,7 +5,12 @@
       "Bash(git config *)",
       "Bash(git remote *)",
       "Bash(git branch *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(git rm *)",
+      "Bash(git add *)",
+      "Bash(git fsck *)",
+      "Bash(del .git\\\\index)",
+      "Bash(git reset *)"
     ]
   }
 }
