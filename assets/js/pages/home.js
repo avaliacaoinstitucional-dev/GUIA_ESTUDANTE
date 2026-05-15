@@ -6,17 +6,62 @@ const areas=[...new Set(GUIDE_DATA.courses.map(c=>c.area))];
 const areaClass=area=>area.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const featured=GUIDE_DATA.courses.slice(0,6);
 layout(`
-<section class="container hero"><div class="hero-copy"><span class="eyebrow"><i class="ri-rocket-line"></i> escolha com mais segurança</span><h1>Qual curso superior combina com <span class="gradient">você?</span></h1><p class="lead">Um guia interativo, direto no celular, para você explorar cursos, comparar áreas, descobrir unidades e fazer um quiz rápido de perfil.</p><div class="hero-actions"><a class="btn btn-primary" href="cursos.html">Explorar cursos <i class="ri-arrow-right-line"></i></a><a class="btn btn-ghost" href="#quiz">Fazer quiz rápido <i class="ri-chat-3-line"></i></a></div><div class="stats"><div class="stat"><b>${GUIDE_DATA.stats.totalCourses}</b><span>cursos</span></div><div class="stat"><b>${GUIDE_DATA.stats.totalSchools}</b><span>unidades</span></div><div class="stat"><b>${GUIDE_DATA.stats.totalOfferings}</b><span>ofertas mapeadas</span></div></div></div><div class="hero-visual"><div class="hero-image"><img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=900&q=80" alt="Estudante explorando cursos online"></div><div class="phone-card"><div class="phone-screen"><div class="story"><div class="chat"><strong>Você:</strong> “Gosto de tecnologia, mas também curto agro. E agora?”</div><div class="chat"><strong>Guia:</strong> “Comece filtrando por área, veja onde oferta e confira o perfil de cada curso.”</div><div class="chat"><strong>Dica:</strong> “Não escolha só pelo nome. Veja habilidades, rotina e possibilidades.”</div><span class="floating-pill">bora descobrir? <i class="ri-rocket-line"></i></span></div></div></div></div></section>
+<section class="container hero"><div class="hero-copy"><span class="eyebrow"><i class="ri-rocket-line"></i> escolha com mais segurança</span><h1>Qual curso superior combina com <span class="gradient">você?</span></h1><p class="lead">Um guia interativo, direto no celular, para você explorar cursos, comparar áreas, descobrir unidades e fazer um quiz rápido de perfil.</p><div class="hero-actions"><a class="btn btn-primary" href="cursos.html">Explorar cursos <i class="ri-arrow-right-line"></i></a><a class="btn btn-ghost btn-quiz-hero" href="#quiz">Fazer quiz rápido <i class="ri-chat-3-line"></i></a></div><div class="stats"><div class="stat"><b>${GUIDE_DATA.stats.totalCourses}</b><span>cursos</span></div><div class="stat"><b>${GUIDE_DATA.stats.totalSchools}</b><span>unidades</span></div><div class="stat"><b>${GUIDE_DATA.stats.totalOfferings}</b><span>ofertas mapeadas</span></div></div></div><div class="hero-visual"><div class="hero-image"><img src="https://plus.unsplash.com/premium_photo-1691962724987-f3d5e07179c3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Estudante explorando cursos online"></div><div class="phone-card"><div class="phone-screen"><div class="story"><div class="chat"><strong>Você:</strong> “Gosto de tecnologia, mas também curto agro. E agora?”</div><div class="chat"><strong>Guia:</strong> “Comece filtrando por área, veja onde oferta e confira o perfil de cada curso.”</div><div class="chat"><strong>Dica:</strong> “Não escolha só pelo nome. Veja habilidades, rotina e possibilidades.”</div><span class="floating-pill">bora descobrir? <i class="ri-rocket-line"></i></span></div></div></div></div></section>
 <section class="container section"><div class="section-head"><div><h2>Escolha por área</h2><p>As áreas ajudam você a entender o tipo de caminho profissional antes de decidir o curso.</p></div><a class="btn btn-ghost" href="cursos.html">Ver todos</a></div><div class="grid">${areas.map(area=>{const c=GUIDE_DATA.courses.find(x=>x.area===area); return `<a class="card area-card area-${areaClass(area)}" href="cursos.html?area=${encodeURIComponent(area)}"><div class="icon"><i class="${getAreaIcon(area)}"></i></div><h3>${area}</h3><p>${GUIDE_DATA.courses.filter(x=>x.area===area).length} opções de curso</p></a>`}).join('')}</div></section>
 <section class="container section" id="quiz"><div class="section-head"><div><h2>Quiz rápido</h2><p>Marque o que mais combina com você e veja áreas que podem fazer sentido.</p></div></div><div class="quiz"><div class="card quiz-panel"><h3>Como responder?</h3><p>Escolha uma opção em cada pergunta. O resultado aparece na hora e você pode abrir os cursos relacionados.</p><button class="btn btn-primary" id="clearQuiz">Refazer</button></div><div class="card"><div id="quizBox"></div><div id="quizResult" class="result-list"></div></div></div></section>
 <section class="container section"><div class="section-head"><div><h2>Cursos em destaque</h2><p>Algumas opções para começar a explorar.</p></div></div><div class="course-grid">${featured.map(courseCard).join('')}</div></section>`, 'home');
+const areaNotes={
+ 'Agro, Alimentos e Sustentabilidade':'Cursos ligados ao campo, alimentos, produção rural, sustentabilidade e tecnologia aplicada ao agro.',
+ 'Gestão, Negócios e Serviços':'Cursos para quem gosta de organizar processos, lidar com pessoas, vender, planejar e tomar decisões.',
+ 'Indústria, Manutenção e Produção':'Cursos com foco em máquinas, manutenção, produção, precisão técnica e rotina prática.',
+ 'Construção, Energia e Segurança':'Cursos para quem se interessa por obras, energia, qualidade, segurança e infraestrutura.',
+ 'Saúde, Bem-estar e Estética':'Cursos voltados ao cuidado com pessoas, saúde, estética, atendimento e ambientes clínicos.',
+ 'Tecnologia e Programação':'Cursos para quem curte sistemas, dados, redes, IA, dispositivos e resolução de problemas digitais.'
+};
 const questions=[
- {q:'No dia a dia, você prefere...', a:[['Criar, testar tecnologia e resolver bugs','Tecnologia e Programação'],['Planejar, vender, organizar ou liderar','Gestão, Negócios e Serviços'],['Entender máquinas, produção e manutenção','Indústria, Manutenção e Produção']]},
- {q:'Qual tema chama mais sua atenção?', a:[['Sustentabilidade, campo e alimentos','Agro, Alimentos e Sustentabilidade'],['Cuidado, saúde e bem-estar','Saúde, Bem-estar e Estética'],['Dados, IA, redes e sistemas','Tecnologia e Programação']]},
- {q:'Você se vê trabalhando mais com...', a:[['Pessoas, processos e resultados','Gestão, Negócios e Serviços'],['Equipamentos, técnica e precisão','Indústria, Manutenção e Produção'],['Produção rural, alimentos e inovação no campo','Agro, Alimentos e Sustentabilidade']]}
+ {q:'Quando você aprende algo novo, o que mais te prende?', a:[
+  {t:'Testar no computador, montar soluções e descobrir como a tecnologia funciona', s:{'Tecnologia e Programação':3,'Indústria, Manutenção e Produção':1}},
+  {t:'Entender processos, organizar tarefas e pensar em resultados', s:{'Gestão, Negócios e Serviços':3,'Construção, Energia e Segurança':1}},
+  {t:'Ver a aplicação prática no campo, nos alimentos ou na produção sustentável', s:{'Agro, Alimentos e Sustentabilidade':3,'Construção, Energia e Segurança':1}}
+ ]},
+ {q:'Qual rotina combina mais com você?', a:[
+  {t:'Analisar informações, programar, configurar sistemas ou resolver bugs', s:{'Tecnologia e Programação':3}},
+  {t:'Atender pessoas, cuidar da saúde, da imagem ou do bem-estar', s:{'Saúde, Bem-estar e Estética':3,'Gestão, Negócios e Serviços':1}},
+  {t:'Acompanhar máquinas, produção, manutenção ou medições técnicas', s:{'Indústria, Manutenção e Produção':3,'Construção, Energia e Segurança':1}}
+ ]},
+ {q:'Em um projeto, você se sentiria melhor cuidando de...', a:[
+  {t:'Planejamento, custos, equipe, atendimento ou vendas', s:{'Gestão, Negócios e Serviços':3}},
+  {t:'Qualidade, segurança, energia, obra ou normas técnicas', s:{'Construção, Energia e Segurança':3,'Indústria, Manutenção e Produção':1}},
+  {t:'Plantio, criação, alimentos, solo, água ou produção rural', s:{'Agro, Alimentos e Sustentabilidade':3}}
+ ]},
+ {q:'Que tipo de desafio parece mais interessante?', a:[
+  {t:'Criar um aplicativo, proteger dados, usar IA ou conectar dispositivos', s:{'Tecnologia e Programação':3}},
+  {t:'Melhorar uma linha de produção, consertar equipamentos ou automatizar máquinas', s:{'Indústria, Manutenção e Produção':3,'Tecnologia e Programação':1}},
+  {t:'Ajudar uma clínica, hospital, ótica, laboratório ou espaço de estética a funcionar melhor', s:{'Saúde, Bem-estar e Estética':3,'Gestão, Negócios e Serviços':1}}
+ ]},
+ {q:'Qual ambiente você toparia conhecer por dentro?', a:[
+  {t:'Empresa, comércio, setor público, estoque ou equipe administrativa', s:{'Gestão, Negócios e Serviços':3}},
+  {t:'Fazenda, agroindústria, viveiro, laticínio ou laboratório de alimentos', s:{'Agro, Alimentos e Sustentabilidade':3}},
+  {t:'Canteiro de obras, usina, setor de segurança ou laboratório de qualidade', s:{'Construção, Energia e Segurança':3}}
+ ]},
+ {q:'Se fosse escolher uma habilidade para começar agora, seria...', a:[
+  {t:'Programação, banco de dados, redes ou inteligência artificial', s:{'Tecnologia e Programação':3}},
+  {t:'Desenho técnico, energia solar, segurança do trabalho ou controle de obras', s:{'Construção, Energia e Segurança':3}},
+  {t:'Eletricidade, eletrônica, mecânica, automação ou manutenção', s:{'Indústria, Manutenção e Produção':3}}
+ ]},
+ {q:'O que você mais gostaria de melhorar no mundo real?', a:[
+  {t:'A produção de alimentos e o uso sustentável dos recursos naturais', s:{'Agro, Alimentos e Sustentabilidade':3}},
+  {t:'O cuidado com pessoas, a saúde e a qualidade de vida', s:{'Saúde, Bem-estar e Estética':3}},
+  {t:'A forma como empresas e serviços atendem, vendem e se organizam', s:{'Gestão, Negócios e Serviços':3}}
+ ]},
+ {q:'Quando pensa em futuro profissional, você prefere...', a:[
+  {t:'Um caminho com tecnologia, inovação e aprendizagem constante', s:{'Tecnologia e Programação':2,'Indústria, Manutenção e Produção':1}},
+  {t:'Um caminho com contato com pessoas, liderança e comunicação', s:{'Gestão, Negócios e Serviços':2,'Saúde, Bem-estar e Estética':1}},
+  {t:'Um caminho técnico, prático, com normas, equipamentos e responsabilidade', s:{'Construção, Energia e Segurança':2,'Indústria, Manutenção e Produção':1}}
+ ]}
 ];
 const scores={};
 const box=document.querySelector('#quizBox');
-box.innerHTML=questions.map((item,idx)=>`<div class="question"><h3>${idx+1}. ${item.q}</h3><div class="answers">${item.a.map((ans,i)=>`<label class="answer"><input type="radio" name="q${idx}" value="${ans[1]}"><span>${ans[0]}</span></label>`).join('')}</div></div>`).join('');
-function update(){Object.keys(scores).forEach(k=>delete scores[k]); document.querySelectorAll('#quizBox input:checked').forEach(i=>scores[i.value]=(scores[i.value]||0)+1); const ranked=Object.entries(scores).sort((a,b)=>b[1]-a[1]).slice(0,3); document.querySelector('#quizResult').innerHTML=ranked.length? ranked.map(([area])=>`<a class="card" href="cursos.html?area=${encodeURIComponent(area)}"><strong>${area}</strong><p>Ver cursos dessa área →</p></a>`).join(''):'<p>Responda às perguntas para ver seu resultado.</p>'}
+box.innerHTML=`<div class="quiz-progress"><span id="quizCount">0/${questions.length} respondidas</span><div><i id="quizBar"></i></div></div>`+questions.map((item,idx)=>`<div class="question"><h3>${idx+1}. ${item.q}</h3><div class="answers">${item.a.map((ans,i)=>`<label class="answer"><input type="radio" name="q${idx}" value="${idx}-${i}"><span>${ans.t}</span></label>`).join('')}</div></div>`).join('');
+function update(){Object.keys(scores).forEach(k=>delete scores[k]); const checked=[...document.querySelectorAll('#quizBox input:checked')]; checked.forEach(input=>{const [qIdx,aIdx]=input.value.split('-').map(Number); Object.entries(questions[qIdx].a[aIdx].s).forEach(([area,points])=>scores[area]=(scores[area]||0)+points)}); const answered=checked.length; document.querySelector('#quizCount').textContent=`${answered}/${questions.length} respondidas`; document.querySelector('#quizBar').style.width=`${Math.round(answered/questions.length*100)}%`; const ranked=Object.entries(scores).sort((a,b)=>b[1]-a[1]).slice(0,3); const topScore=ranked[0]?.[1]||0; document.querySelector('#quizResult').innerHTML=ranked.length? ranked.map(([area,score],idx)=>{const suggestions=GUIDE_DATA.courses.filter(c=>c.area===area).slice(0,4); const percent=Math.max(32,Math.round(score/topScore*100)); return `<a class="card result-card" href="cursos.html?area=${encodeURIComponent(area)}"><span class="mini">${idx===0?'maior compatibilidade':'também combina'}</span><strong>${area}</strong><p>${areaNotes[area]}</p><div class="match-bar"><i style="width:${percent}%"></i><span>${percent}%</span></div><div class="tagrow">${suggestions.map(c=>`<span class="tag">${c.title.replace('Tecnologia em ','')}</span>`).join('')}</div></a>`}).join(''):'<p>Responda às perguntas para ver seu resultado.</p>'}
 document.querySelectorAll('#quizBox input').forEach(i=>i.addEventListener('change',update)); document.querySelector('#clearQuiz').addEventListener('click',()=>{document.querySelectorAll('#quizBox input').forEach(i=>i.checked=false);update()}); update();

@@ -1258,7 +1258,7 @@ export const GUIDE_DATA = {
       "title": "Tecnologia em Agrocomputação",
       "area": "Agro, Alimentos e Sustentabilidade",
       "icon": "💻",
-      "summary": "Agrocomputação: Tecnologia aplicada ao campo, dados agrícolas, sistemas digitais e inovação no agronegócio.",
+      "summary": "Projetar soluções computacionais para problemas identificados no contexto das ciências agrárias, utilizando conceitos de engenharia de software e automação.",
       "vibes": [
         "Criativo digital",
         "Curte desafios lógicos",
