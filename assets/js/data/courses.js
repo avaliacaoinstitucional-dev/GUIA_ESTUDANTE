@@ -2205,3 +2205,135 @@ export const GUIDE_DATA = {
     "totalOfferings": 113
   }
 };
+
+const OFFICIAL_TECHNOLOGY_OFFERINGS = [
+  { school: "Água Boa", course: "Tecnologia em Agrocomputação" },
+  { school: "Água Boa", course: "Tecnologia em Gestão Comercial" },
+  { school: "Água Boa", course: "Tecnologia em Gestão da Qualidade" },
+  { school: "Água Boa", course: "Tecnologia em Logística" },
+  { school: "Alta Floresta", course: "Tecnologia em Agrocomputação" },
+  { school: "Alta Floresta", course: "Tecnologia em Agroindústria" },
+  { school: "Alta Floresta", course: "Tecnologia em Cafeicultura" },
+  { school: "Alta Floresta", course: "Tecnologia em Fruticultura" },
+  { school: "Alta Floresta", course: "Tecnologia em Gestão do Agronegócio" },
+  { school: "Alta Floresta", course: "Tecnologia em Horticultura" },
+  { school: "Alta Floresta", course: "Tecnologia em Produção de Grãos" },
+  { school: "Barra Do Garças", course: "Tecnologia em Estética e Cosmética" },
+  { school: "Barra Do Garças", course: "Tecnologia em Gestão Hospitalar" },
+  { school: "Barra Do Garças", course: "Tecnologia em Podologia" },
+  { school: "Barra Do Garças", course: "Tecnologia em Radiologia" },
+  { school: "Cáceres", course: "Tecnologia em Estética e Cosmética" },
+  { school: "Cáceres", course: "Tecnologia em Gestão Hospitalar" },
+  { school: "Cáceres", course: "Tecnologia em Podologia" },
+  { school: "Cáceres", course: "Tecnologia em Radiologia" },
+  { school: "Campo Verde", course: "Tecnologia em Automação Industrial" },
+  { school: "Campo Verde", course: "Tecnologia em Gestão da Qualidade" },
+  { school: "Campo Verde", course: "Tecnologia em Manutenção Industrial" },
+  { school: "Campo Verde", course: "Tecnologia em Produção Têxtil" },
+  { school: "Cuiabá", course: "Tecnologia em Agrocomputação" },
+  { school: "Cuiabá", course: "Tecnologia em Banco de Dados" },
+  { school: "Cuiabá", course: "Tecnologia em Inteligência Artificial" },
+  { school: "Cuiabá", course: "Tecnologia em Segurança da Informação" },
+  { school: "Diamantino", course: "Tecnologia em Agroecologia" },
+  { school: "Diamantino", course: "Tecnologia em Aquicultura" },
+  { school: "Diamantino", course: "Tecnologia em Gestão do Agronegócio" },
+  { school: "Diamantino", course: "Tecnologia em Produção de Grãos" },
+  { school: "Juara", course: "Tecnologia em Gestão Comercial" },
+  { school: "Juara", course: "Tecnologia em Gestão da Qualidade" },
+  { school: "Juara", course: "Tecnologia em Gestão do Agronegócio" },
+  { school: "Juara", course: "Tecnologia em Logística" },
+  { school: "Lucas Do Rio Verde", course: "Tecnologia em Agrocomputação" },
+  { school: "Lucas Do Rio Verde", course: "Tecnologia em Agroecologia" },
+  { school: "Lucas Do Rio Verde", course: "Tecnologia em Gestão Comercial" },
+  { school: "Lucas Do Rio Verde", course: "Tecnologia em Gestão do Agronegócio" },
+  { school: "Lucas Do Rio Verde", course: "Tecnologia em Logística" },
+  { school: "Matupá", course: "Tecnologia em Agroecologia" },
+  { school: "Matupá", course: "Tecnologia em Gestão Comercial" },
+  { school: "Matupá", course: "Tecnologia em Gestão do Agronegócio" },
+  { school: "Matupá", course: "Tecnologia em Logística" },
+  { school: "Poxoréu", course: "Tecnologia em Agroecologia" },
+  { school: "Poxoréu", course: "Tecnologia em Aquicultura" },
+  { school: "Poxoréu", course: "Tecnologia em Gestão do Agronegócio" },
+  { school: "Poxoréu", course: "Tecnologia em Produção de Grãos" },
+  { school: "Primavera Do Leste", course: "Tecnologia em Agroecologia" },
+  { school: "Primavera Do Leste", course: "Tecnologia em Gestão Comercial" },
+  { school: "Primavera Do Leste", course: "Tecnologia em Gestão do Agronegócio" },
+  { school: "Primavera Do Leste", course: "Tecnologia em Logística" },
+  { school: "Rondonópolis", course: "Tecnologia em Construção de Edifícios" },
+  { school: "Rondonópolis", course: "Tecnologia em Controle de Obras" },
+  { school: "Rondonópolis", course: "Tecnologia em Gestão da Qualidade" },
+  { school: "Rondonópolis", course: "Tecnologia em Segurança do Trabalho" },
+  { school: "Sinop", course: "Tecnologia em Biocombustíveis" },
+  { school: "Sinop", course: "Tecnologia em Energias Renováveis" },
+  { school: "Sinop", course: "Tecnologia em Gestão de Energia e Eficiência Energética" },
+  { school: "Sinop", course: "Tecnologia em Produção Sucroalcooleira" },
+  { school: "Sorriso", course: "Tecnologia em Agrocomputação" },
+  { school: "Sorriso", course: "Tecnologia em Automação Industrial" },
+  { school: "Sorriso", course: "Tecnologia em Gestão da Produção Industrial" },
+  { school: "Sorriso", course: "Tecnologia em Sistemas Embarcados" },
+  { school: "Tangará Da Serra", course: "Tecnologia em Agroecologia" },
+  { school: "Tangará Da Serra", course: "Tecnologia em Gestão Comercial" },
+  { school: "Tangará Da Serra", course: "Tecnologia em Gestão do Agronegócio" },
+  { school: "Tangará Da Serra", course: "Tecnologia em Logística" },
+  { school: "Várzea Grande", course: "Tecnologia em Banco de Dados" },
+  { school: "Várzea Grande", course: "Tecnologia em Gestão Comercial" },
+  { school: "Várzea Grande", course: "Tecnologia em Gestão da Qualidade" },
+  { school: "Várzea Grande", course: "Tecnologia em Logística" }
+];
+
+const normalizeCatalogText = value => value
+  .normalize("NFD")
+  .replace(/[\u0300-\u036f]/g, "")
+  .toLowerCase()
+  .trim();
+
+const courseSchools = new Map();
+OFFICIAL_TECHNOLOGY_OFFERINGS.forEach(({ school, course }) => {
+  const key = normalizeCatalogText(course);
+  if (!courseSchools.has(key)) courseSchools.set(key, []);
+  courseSchools.get(key).push(school);
+});
+
+if (!GUIDE_DATA.courses.some(course => course.title === "Tecnologia em Cafeicultura")) {
+  GUIDE_DATA.courses.push({
+    id: "tecnologia-em-cafeicultura",
+    title: "Tecnologia em Cafeicultura",
+    area: "Agro, Alimentos e Sustentabilidade",
+    icon: "✨",
+    summary: "Cafeicultura: Produção, manejo, beneficiamento e gestão da cadeia produtiva do café.",
+    vibes: ["Exploração", "Novas ideias", "Projeto de futuro"],
+    schools: [],
+    match: [
+      "quer explorar diferentes possibilidades",
+      "gosta de aprender na prática",
+      "busca uma formação aplicada"
+    ],
+    future: [
+      "produção agrícola",
+      "beneficiamento do café",
+      "gestão de lavouras",
+      "controle de qualidade",
+      "cadeias produtivas do agro"
+    ],
+    skills: ["curiosidade", "organização", "comunicação", "responsabilidade"]
+  });
+}
+
+GUIDE_DATA.courses = GUIDE_DATA.courses
+  .filter(course => courseSchools.has(normalizeCatalogText(course.title)))
+  .map(course => ({
+    ...course,
+    schools: courseSchools.get(normalizeCatalogText(course.title))
+  }));
+
+GUIDE_DATA.schools = [...new Set(OFFICIAL_TECHNOLOGY_OFFERINGS.map(item => item.school))]
+  .filter(school => GUIDE_DATA.courses.some(course => course.schools.includes(school)));
+GUIDE_DATA.areas = [...new Set(GUIDE_DATA.courses.map(course => course.area))];
+GUIDE_DATA.offerings = OFFICIAL_TECHNOLOGY_OFFERINGS
+  .filter(item => GUIDE_DATA.courses.some(course => course.title === item.course))
+  .map(item => ({ school: item.school, course: item.course, note: "" }));
+GUIDE_DATA.stats = {
+  totalCourses: GUIDE_DATA.courses.length,
+  totalSchools: GUIDE_DATA.schools.length,
+  totalOfferings: GUIDE_DATA.offerings.length
+};

@@ -4,6 +4,7 @@ const areaIcons={
   'Tecnologia e Programação':'ri-code-box-line',
   'Gestão, Negócios e Serviços':'ri-briefcase-4-line',
   'Indústria, Manutenção e Produção':'ri-tools-line',
+  'Construção, Energia e Segurança':'ri-shield-check-line',
   'Agro, Alimentos e Sustentabilidade':'ri-leaf-line',
   'Saúde, Bem-estar e Estética':'ri-heart-pulse-line'
 };
@@ -70,5 +71,6 @@ export function courseCard(course){
  const image=getCourseImage(course);
  const fallback=getCourseFallbackImage(course);
  const iconClass=getAreaIcon(course.area);
- return `<article class="card course-card area-${areaClass(course.area)}"><img class="course-cover" src="${image}" alt="${escapeHtml(course.area)}" onerror="this.onerror=null;this.src='${fallback}'"><div class="course-info"><div class="icon"><i class="${iconClass}"></i></div><span class="tag">${escapeHtml(course.area)}</span><h3>${escapeHtml(course.title)}</h3><p>${escapeHtml(course.summary)}</p><div class="school-list">${schools}${more}</div></div><div class="bottom"><span class="mini">${course.schools.length} unidade(s)</span><a class="btn btn-ghost" href="curso.html?id=${course.id}">Ver detalhes</a></div></article>`;
+ const unitLabel=course.schools.length===1?'unidade':'unidades';
+ return `<article class="card course-card area-${areaClass(course.area)}"><img class="course-cover" src="${image}" alt="${escapeHtml(course.area)}" onerror="this.onerror=null;this.src='${fallback}'"><div class="course-info"><div class="icon"><i class="${iconClass}"></i></div><span class="tag">${escapeHtml(course.area)}</span><h3>${escapeHtml(course.title)}</h3><p>${escapeHtml(course.summary)}</p><div class="school-list">${schools}${more}</div></div><div class="bottom"><span class="mini">${course.schools.length} ${unitLabel}</span><a class="btn btn-ghost" href="curso.html?id=${course.id}">Ver detalhes</a></div></article>`;
 }

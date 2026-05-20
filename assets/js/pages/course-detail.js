@@ -1,10 +1,10 @@
 
 import { GUIDE_DATA } from '../data/courses.js';
 import { layout } from '../components/layout.js';
-import { getAreaIcon, getAreaImage, getCourseFallbackImage, getCourseImage } from '../components/courseCard.js';
+import { getAreaIcon, getCourseFallbackImage, getCourseImage } from '../components/courseCard.js';
 const id=new URLSearchParams(location.search).get('id');
 const c=GUIDE_DATA.courses.find(x=>x.id===id) || GUIDE_DATA.courses[0];
-const banner=c.id==='tecnologia-em-gestao-hospitalar'?getCourseImage(c):getAreaImage(c.area);
+const banner=getCourseImage(c);
 const fallback=getCourseFallbackImage(c);
 const workByCourse={
   'tecnologia-em-agroecologia':['consultoria em produção agroecológica','manejo sustentável do solo','assistência técnica rural','projetos de agricultura familiar','certificação orgânica'],
