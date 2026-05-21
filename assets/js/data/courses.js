@@ -1019,7 +1019,7 @@ export const GUIDE_DATA = {
     {
       "id": "tecnologia-em-producao-sucroalcooleira",
       "title": "Tecnologia em Produção Sucroalcooleira",
-      "area": "Construção, Energia e Segurança",
+      "area": "Indústria, Manutenção e Produção",
       "icon": "✨",
       "summary": "Produção Sucroalcooleira: Produção de açúcar, etanol e derivados, com controle de processos industriais.",
       "vibes": [
@@ -1256,7 +1256,7 @@ export const GUIDE_DATA = {
     {
       "id": "tecnologia-em-agrocomputacao",
       "title": "Tecnologia em Agrocomputação",
-      "area": "Agro, Alimentos e Sustentabilidade",
+      "area": "Tecnologia e Programação",
       "icon": "💻",
       "summary": "Projetar soluções computacionais para problemas identificados no contexto das ciências agrárias, utilizando conceitos de engenharia de software e automação.",
       "vibes": [
