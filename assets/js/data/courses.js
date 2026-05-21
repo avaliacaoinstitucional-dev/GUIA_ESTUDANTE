@@ -1019,7 +1019,7 @@ export const GUIDE_DATA = {
     {
       "id": "tecnologia-em-producao-sucroalcooleira",
       "title": "Tecnologia em Produção Sucroalcooleira",
-      "area": "Agro, Alimentos e Sustentabilidade",
+      "area": "Construção, Energia e Segurança",
       "icon": "✨",
       "summary": "Produção Sucroalcooleira: Produção de açúcar, etanol e derivados, com controle de processos industriais.",
       "vibes": [
