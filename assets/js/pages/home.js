@@ -20,29 +20,29 @@ const areaNotes={
 };
 const questions=[
  {q:'Quando você aprende algo novo, o que mais desperta seu interesse?', a:[
-  {t:'Testar no computador, montar soluções e descobrir como a tecnologia funciona', s:{'Tecnologia e Programação':3,'Indústria, Manutenção e Produção':1}},
-  {t:'Entender processos, organizar tarefas e pensar em resultados', s:{'Gestão, Negócios e Serviços':3,'Construção, Energia e Segurança':1}},
-  {t:'Ver a aplicação prática no campo, nos alimentos ou na produção sustentável', s:{'Agro, Alimentos e Sustentabilidade':3,'Construção, Energia e Segurança':1}}
+  {t:'Testar sistemas, dados, aplicativos ou dispositivos digitais', s:{'Tecnologia e Programação':3,'Indústria, Manutenção e Produção':1}},
+  {t:'Entender processos, pessoas, custos e formas de organizar melhor uma atividade', s:{'Gestão, Negócios e Serviços':3,'Saúde, Bem-estar e Estética':1}},
+  {t:'Ver como a teoria vira prática no campo, nos alimentos, na energia ou nas obras', s:{'Agro, Alimentos e Sustentabilidade':2,'Construção, Energia e Segurança':2}}
  ]},
  {q:'Qual rotina combina mais com você?', a:[
-  {t:'Analisar informações, programar, configurar sistemas ou resolver bugs', s:{'Tecnologia e Programação':3}},
-  {t:'Atender pessoas, cuidar da saúde, da imagem ou do bem-estar', s:{'Saúde, Bem-estar e Estética':3,'Gestão, Negócios e Serviços':1}},
-  {t:'Acompanhar máquinas, produção, manutenção ou medições técnicas', s:{'Indústria, Manutenção e Produção':3,'Construção, Energia e Segurança':1}}
+  {t:'Programar, configurar redes, analisar informações ou proteger dados', s:{'Tecnologia e Programação':3}},
+  {t:'Atender pessoas, orientar equipes, comunicar ideias ou resolver demandas do público', s:{'Gestão, Negócios e Serviços':2,'Saúde, Bem-estar e Estética':2}},
+  {t:'Acompanhar máquinas, produção, manutenção, energia ou medições técnicas', s:{'Indústria, Manutenção e Produção':2,'Construção, Energia e Segurança':2}}
  ]},
  {q:'Em um projeto, você se sentiria melhor cuidando de...', a:[
-  {t:'Planejamento, custos, equipe, atendimento ou vendas', s:{'Gestão, Negócios e Serviços':3}},
-  {t:'Qualidade, segurança, energia, obra ou normas técnicas', s:{'Construção, Energia e Segurança':3,'Indústria, Manutenção e Produção':1}},
-  {t:'Plantio, criação, alimentos, solo, água ou produção rural', s:{'Agro, Alimentos e Sustentabilidade':3}}
+  {t:'Planejamento, custos, equipe, atendimento, vendas ou logística', s:{'Gestão, Negócios e Serviços':3}},
+  {t:'Qualidade, segurança, energia, execução de obra ou normas técnicas', s:{'Construção, Energia e Segurança':3,'Indústria, Manutenção e Produção':1}},
+  {t:'Plantio, criação, alimentos, solo, água ou produção rural', s:{'Agro, Alimentos e Sustentabilidade':3,'Indústria, Manutenção e Produção':1}}
  ]},
  {q:'Que tipo de desafio parece mais interessante?', a:[
-  {t:'Criar um aplicativo, proteger dados, usar IA ou conectar dispositivos', s:{'Tecnologia e Programação':3}},
-  {t:'Melhorar uma linha de produção, consertar equipamentos ou automatizar máquinas', s:{'Indústria, Manutenção e Produção':3,'Tecnologia e Programação':1}},
+  {t:'Criar um aplicativo, usar IA, conectar dispositivos ou proteger dados', s:{'Tecnologia e Programação':3}},
+  {t:'Melhorar uma produção, consertar equipamentos ou automatizar processos', s:{'Indústria, Manutenção e Produção':3,'Tecnologia e Programação':1}},
   {t:'Ajudar uma clínica, hospital, ótica, laboratório ou espaço de estética a funcionar melhor', s:{'Saúde, Bem-estar e Estética':3,'Gestão, Negócios e Serviços':1}}
  ]},
  {q:'Qual ambiente você gostaria de conhecer melhor?', a:[
   {t:'Empresa, comércio, setor público, estoque ou equipe administrativa', s:{'Gestão, Negócios e Serviços':3}},
   {t:'Fazenda, agroindústria, viveiro, laticínio ou laboratório de alimentos', s:{'Agro, Alimentos e Sustentabilidade':3}},
-  {t:'Canteiro de obras, usina, setor de segurança ou laboratório de qualidade', s:{'Construção, Energia e Segurança':3}}
+  {t:'Laboratório de informática, oficina, canteiro de obras, usina ou setor de segurança', s:{'Tecnologia e Programação':1,'Indústria, Manutenção e Produção':1,'Construção, Energia e Segurança':2}}
  ]},
  {q:'Se fosse escolher uma habilidade para começar agora, seria...', a:[
   {t:'Programação, banco de dados, redes ou inteligência artificial', s:{'Tecnologia e Programação':3}},
@@ -51,13 +51,13 @@ const questions=[
  ]},
  {q:'Em qual área você gostaria de gerar impacto?', a:[
   {t:'A produção de alimentos e o uso sustentável dos recursos naturais', s:{'Agro, Alimentos e Sustentabilidade':3}},
-  {t:'O cuidado com pessoas, a saúde e a qualidade de vida', s:{'Saúde, Bem-estar e Estética':3}},
-  {t:'A forma como empresas e serviços atendem, vendem e se organizam', s:{'Gestão, Negócios e Serviços':3}}
+  {t:'O cuidado com pessoas, a saúde, a estética e a qualidade de vida', s:{'Saúde, Bem-estar e Estética':3}},
+  {t:'A tecnologia, a produção, a segurança e a melhoria dos processos', s:{'Tecnologia e Programação':1,'Indústria, Manutenção e Produção':2,'Construção, Energia e Segurança':1}}
  ]},
  {q:'Pensando no futuro profissional, você se identifica mais com qual caminho?', a:[
-  {t:'Um caminho com tecnologia, inovação e aprendizagem constante', s:{'Tecnologia e Programação':2,'Indústria, Manutenção e Produção':1}},
-  {t:'Um caminho com contato com pessoas, liderança e comunicação', s:{'Gestão, Negócios e Serviços':2,'Saúde, Bem-estar e Estética':1}},
-  {t:'Um caminho técnico, prático, com normas, equipamentos e responsabilidade', s:{'Construção, Energia e Segurança':2,'Indústria, Manutenção e Produção':1}}
+  {t:'Um caminho com tecnologia, inovação e aprendizagem constante', s:{'Tecnologia e Programação':3}},
+  {t:'Um caminho com contato com pessoas, liderança, atendimento e comunicação', s:{'Gestão, Negócios e Serviços':2,'Saúde, Bem-estar e Estética':2}},
+  {t:'Um caminho técnico, prático, com normas, equipamentos e responsabilidade', s:{'Construção, Energia e Segurança':2,'Indústria, Manutenção e Produção':2}}
  ]}
 ];
 const scores={};
