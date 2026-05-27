@@ -2271,10 +2271,10 @@ const OFFICIAL_TECHNOLOGY_OFFERINGS = [
   { school: "Tangará Da Serra", course: "Tecnologia em Gestão Comercial" },
   { school: "Tangará Da Serra", course: "Tecnologia em Gestão do Agronegócio" },
   { school: "Tangará Da Serra", course: "Tecnologia em Logística" },
-  { school: "Várzea Grande", course: "Tecnologia em Banco de Dados" },
-  { school: "Várzea Grande", course: "Tecnologia em Gestão Comercial" },
-  { school: "Várzea Grande", course: "Tecnologia em Gestão da Qualidade" },
-  { school: "Várzea Grande", course: "Tecnologia em Logística" }
+  { school: "Várzea Grande", course: "Tecnologia em Logística" },
+  { school: "Várzea Grande", course: "Tecnologia em Processos Gerenciais" },
+  { school: "Várzea Grande", course: "Tecnologia em Análise e Desenvolvimento de Sistemas" },
+  { school: "Várzea Grande", course: "Tecnologia em Marketing" }
 ];
 
 const normalizeCatalogText = value => value
