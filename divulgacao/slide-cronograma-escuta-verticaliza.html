@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Slide - Cronograma da Escuta Verticaliza MT</title>
+<style>
+  :root {
+    --bg: #0b1020;
+    --bg2: #131a33;
+    --text: #f8fbff;
+    --muted: #cbd5e1;
+    --brand: #6c5ce7;
+    --brand2: #00d4ff;
+    --pink: #ff5ea8;
+    --line: rgba(255, 255, 255, .18);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    min-height: 100%;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: #111831;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    padding: 0;
+  }
+
+  .slide {
+    width: min(1280px, 100vw);
+    aspect-ratio: 16 / 9;
+    display: grid;
+    grid-template-columns: 1fr 1.18fr;
+    gap: 30px;
+    align-items: center;
+    padding: 54px 66px;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 12% 18%, rgba(0, 212, 255, .34), transparent 30%),
+      radial-gradient(circle at 92% 92%, rgba(255, 94, 168, .26), transparent 32%),
+      linear-gradient(145deg, var(--bg2), var(--bg) 70%);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, .38);
+  }
+
+  .intro {
+    display: grid;
+    gap: 18px;
+    align-content: center;
+  }
+
+  .badge {
+    width: max-content;
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 15px;
+    border: 1px solid rgba(0, 212, 255, .35);
+    border-radius: 999px;
+    color: #c9f6ff;
+    background: rgba(0, 212, 255, .12);
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(38px, 4vw, 52px);
+    line-height: .96;
+    font-weight: 900;
+    letter-spacing: -.05em;
+  }
+
+  h1 span {
+    white-space: nowrap;
+  }
+
+  .gradient {
+    background: linear-gradient(90deg, var(--brand2), #56e7ff 45%, #ff8bd0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .support {
+    max-width: 520px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 22px;
+    line-height: 1.45;
+  }
+
+  .timeline {
+    position: relative;
+    display: grid;
+    gap: 14px;
+    padding-left: 36px;
+  }
+
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    bottom: 12px;
+    left: 10px;
+    width: 4px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, var(--brand2), var(--brand), var(--pink));
+  }
+
+  .item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 136px 1fr;
+    gap: 16px;
+    align-items: center;
+    min-height: 82px;
+    padding: 16px 22px;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    background: linear-gradient(145deg, rgba(255,255,255,.13), rgba(255,255,255,.07));
+    box-shadow: 0 12px 34px rgba(0, 0, 0, .18);
+  }
+
+  .item::before {
+    content: "";
+    position: absolute;
+    left: -45px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 5px solid var(--brand2);
+    transform: translateY(-50%);
+    box-shadow: 0 0 0 8px rgba(0, 212, 255, .12);
+  }
+
+  .date {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.15;
+  }
+
+  .date span {
+    display: block;
+    color: #c9f6ff;
+    font-size: 17px;
+    font-weight: 800;
+    margin-top: 5px;
+  }
+
+  .text {
+    margin: 0;
+    color: #eef4ff;
+    font-size: 20px;
+    line-height: 1.32;
+    font-weight: 800;
+  }
+
+  @page {
+    size: 16in 9in;
+    margin: 0;
+  }
+
+  @media print {
+    html, body {
+      width: 16in;
+      height: 9in;
+      padding: 0;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .slide {
+      width: 16in;
+      height: 9in;
+      box-shadow: none;
+    }
+  }
+
+  @media (max-width: 900px) {
+    body { padding: 0; }
+
+    .slide {
+      width: 100%;
+      min-height: 100vh;
+      aspect-ratio: auto;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 36px 24px;
+    }
+
+    .timeline {
+      padding-left: 28px;
+    }
+
+    .timeline::before {
+      left: 8px;
+    }
+
+    .item {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    .item::before {
+      left: -32px;
+    }
+  }
+</style>
+</head>
+<body>
+  <main class="slide">
+    <section class="intro">
+      <span class="badge">Escuta Verticaliza MT</span>
+      <h1>Cronograma<br><span class="gradient">Escuta Verticaliza MT</span></h1>
+      <p class="support">Etapas de orientação, aplicação e diagnóstico junto às unidades escolares.</p>
+    </section>
+
+    <section class="timeline" aria-label="Cronograma">
+      <article class="item">
+        <div class="date">27/05<span>às 14h</span></div>
+        <p class="text">Reunião com diretores e coordenadores.</p>
+      </article>
+
+      <article class="item">
+        <div class="date">28/05</div>
+        <p class="text">Distribuição do aplicativo Guia de Cursos para os alunos do 2º e 3º ano.</p>
+      </article>
+
+      <article class="item">
+        <div class="date">01/06 a 03/06</div>
+        <p class="text">Palestras e explicação dos cursos para as turmas.</p>
+      </article>
+
+      <article class="item">
+        <div class="date">04/06</div>
+        <p class="text">Aplicação do formulário de pesquisa.</p>
+      </article>
+
+      <article class="item">
+        <div class="date">05/06</div>
+        <p class="text">Elaboração do relatório diagnóstico.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
