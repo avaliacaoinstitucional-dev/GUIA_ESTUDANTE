@@ -40,6 +40,7 @@ const courseImages={
   'tecnologia-em-podologia':'assets/img/courses/podologia.jpg',
   'tecnologia-em-radiologia':'assets/img/courses/radiologia.jpg',
   'tecnologia-em-gestao-de-recursos-humanos':'https://plus.unsplash.com/premium_photo-1770393985073-ab53c7dbba39?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'tecnico-em-gestao-financeira':'assets/img/courses/gestao-financeira.jpg',
   'tecnologia-em-logistica':'https://images.unsplash.com/photo-1613690413712-dbe316605644?q=80&w=1159&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   'tecnologia-em-processos-gerenciais':'https://images.unsplash.com/photo-1758876017929-416c85bb985d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fFRlY25vbG9naWElMjBlbSUyMFByb2Nlc3NvcyUyMEdlcmVuY2lhaXN8ZW58MHx8MHx8fDA%3D',
   'tecnologia-em-automacao-industrial':'https://images.unsplash.com/photo-1717386255773-1e3037c81788?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
