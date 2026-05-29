@@ -66,13 +66,15 @@ export function getAreaIcon(area){return areaIcons[area]||'ri-flashlight-line';}
 export function getAreaImage(area){return areaImages[area]||'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80';}
 export function getCourseImage(course){return courseImages[course.id]||getAreaImage(course.area);}
 export function getCourseFallbackImage(course){return getAreaImage(course.area);}
+export function getCourseImagePosition(course){return course.id==='tecnico-em-gestao-financeira'?'center 68%':'center';}
 const areaClass=area=>area.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 export function courseCard(course){
  const schools=course.schools.slice(0,3).map(s=>`<span class="tag">${escapeHtml(s)}</span>`).join('');
  const more=course.schools.length>3?`<span class="tag">+${course.schools.length-3}</span>`:'';
  const image=getCourseImage(course);
  const fallback=getCourseFallbackImage(course);
+ const imagePosition=getCourseImagePosition(course);
  const iconClass=getAreaIcon(course.area);
  const unitLabel=course.schools.length===1?'unidade':'unidades';
- return `<article class="card course-card area-${areaClass(course.area)}"><img class="course-cover" src="${image}" alt="${escapeHtml(course.area)}" onerror="this.onerror=null;this.src='${fallback}'"><div class="course-info"><div class="icon"><i class="${iconClass}"></i></div><span class="tag">${escapeHtml(course.area)}</span><h3>${escapeHtml(course.title)}</h3><p>${escapeHtml(course.summary)}</p><div class="school-list">${schools}${more}</div></div><div class="bottom"><span class="mini">${course.schools.length} ${unitLabel}</span><a class="btn btn-ghost" href="curso.html?id=${course.id}">Ver detalhes</a></div></article>`;
+ return `<article class="card course-card area-${areaClass(course.area)}"><img class="course-cover" src="${image}" alt="${escapeHtml(course.area)}" style="object-position:${imagePosition}" onerror="this.onerror=null;this.src='${fallback}'"><div class="course-info"><div class="icon"><i class="${iconClass}"></i></div><span class="tag">${escapeHtml(course.area)}</span><h3>${escapeHtml(course.title)}</h3><p>${escapeHtml(course.summary)}</p><div class="school-list">${schools}${more}</div></div><div class="bottom"><span class="mini">${course.schools.length} ${unitLabel}</span><a class="btn btn-ghost" href="curso.html?id=${course.id}">Ver detalhes</a></div></article>`;
 }
