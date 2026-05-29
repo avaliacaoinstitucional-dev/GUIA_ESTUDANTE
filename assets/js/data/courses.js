@@ -2211,12 +2211,10 @@ export const GUIDE_DATA = {
 const OFFICIAL_TECHNOLOGY_OFFERINGS = [
   { school: "Água Boa", course: "Tecnologia em Agrocomputação" },
   { school: "Água Boa", course: "Tecnologia em Gestão Comercial" },
-  { school: "Água Boa", course: "Tecnologia em Gestão da Qualidade" },
   { school: "Água Boa", course: "Tecnologia em Gestão de Recursos Humanos" },
-  { school: "Água Boa", course: "Tecnologia em Marketing" },
   { school: "Água Boa", course: "Tecnologia em Processos Gerenciais" },
   { school: "Água Boa", course: "Tecnologia em Gestão da Tecnologia da Informação" },
-  { school: "Água Boa", course: "Tecnologia em Logística" },
+  { school: "Água Boa", course: "Técnico em Gestão Financeira" },
   { school: "Alta Floresta", course: "Tecnologia em Agrocomputação" },
   { school: "Alta Floresta", course: "Tecnologia em Agroindústria" },
   { school: "Alta Floresta", course: "Tecnologia em Gestão do Agronegócio" },
@@ -2323,6 +2321,31 @@ if (!GUIDE_DATA.courses.some(course => course.title === "Tecnologia em Cafeicult
       "cadeias produtivas do agro"
     ],
     skills: ["curiosidade", "organização", "comunicação", "responsabilidade"]
+  });
+}
+
+if (!GUIDE_DATA.courses.some(course => course.title === "Técnico em Gestão Financeira")) {
+  GUIDE_DATA.courses.push({
+    id: "tecnico-em-gestao-financeira",
+    title: "Técnico em Gestão Financeira",
+    area: "Gestão, Negócios e Serviços",
+    icon: "✨",
+    summary: "Gestão Financeira: Controle financeiro, orçamento, fluxo de caixa e apoio à tomada de decisão nas organizações.",
+    vibes: ["Organização", "Planejamento", "Empreendedorismo"],
+    schools: [],
+    match: [
+      "gosta de organizar informações e lidar com números",
+      "tem interesse por empresas, planejamento e finanças",
+      "quer apoiar decisões com dados e controle financeiro"
+    ],
+    future: [
+      "controle financeiro",
+      "orçamento",
+      "fluxo de caixa",
+      "rotinas administrativas",
+      "apoio à gestão de empresas"
+    ],
+    skills: ["organização", "atenção a detalhes", "planejamento", "responsabilidade"]
   });
 }
 
