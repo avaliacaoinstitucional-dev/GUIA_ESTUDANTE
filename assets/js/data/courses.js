@@ -274,6 +274,7 @@ export const GUIDE_DATA = {
       "schools": [
         "Alta Floresta",
         "Diamantino",
+        "Juara",
         "Poxoréu",
         "Tangará Da Serra"
       ],
@@ -1269,6 +1270,7 @@ export const GUIDE_DATA = {
         "Juara",
         "Lucas Do Rio Verde",
         "Matupá",
+        "Tangará Da Serra",
         "Água Boa"
       ],
       "match": [
@@ -2243,10 +2245,13 @@ const OFFICIAL_TECHNOLOGY_OFFERINGS = [
   { school: "Juara", course: "Tecnologia em Gestão da Qualidade" },
   { school: "Juara", course: "Tecnologia em Gestão do Agronegócio" },
   { school: "Juara", course: "Tecnologia em Logística" },
+  { school: "Juara", course: "Tecnologia em Produção de Grãos" },
+  { school: "Juara", course: "Tecnologia em Agroecologia" },
   { school: "Lucas Do Rio Verde", course: "Tecnologia em Agrocomputação" },
   { school: "Lucas Do Rio Verde", course: "Tecnologia em Gestão do Agronegócio" },
   { school: "Lucas Do Rio Verde", course: "Tecnologia em Logística" },
   { school: "Lucas Do Rio Verde", course: "Tecnologia em Produção de Grãos" },
+  { school: "Matupá", course: "Tecnologia em Agrocomputação" },
   { school: "Matupá", course: "Tecnologia em Agroecologia" },
   { school: "Matupá", course: "Tecnologia em Gestão Comercial" },
   { school: "Matupá", course: "Tecnologia em Gestão do Agronegócio" },
@@ -2256,6 +2261,7 @@ const OFFICIAL_TECHNOLOGY_OFFERINGS = [
   { school: "Poxoréu", course: "Tecnologia em Gestão do Agronegócio" },
   { school: "Poxoréu", course: "Tecnologia em Produção de Grãos" },
   { school: "Primavera Do Leste", course: "Tecnologia em Agroecologia" },
+  { school: "Primavera Do Leste", course: "Tecnologia em Agroindústria" },
   { school: "Primavera Do Leste", course: "Tecnologia em Gestão Comercial" },
   { school: "Primavera Do Leste", course: "Tecnologia em Gestão do Agronegócio" },
   { school: "Primavera Do Leste", course: "Tecnologia em Logística" },
@@ -2271,6 +2277,7 @@ const OFFICIAL_TECHNOLOGY_OFFERINGS = [
   { school: "Sorriso", course: "Tecnologia em Automação Industrial" },
   { school: "Sorriso", course: "Tecnologia em Gestão da Produção Industrial" },
   { school: "Sorriso", course: "Tecnologia em Sistemas Embarcados" },
+  { school: "Tangará Da Serra", course: "Tecnologia em Agrocomputação" },
   { school: "Tangará Da Serra", course: "Tecnologia em Agroecologia" },
   { school: "Tangará Da Serra", course: "Tecnologia em Gestão Comercial" },
   { school: "Tangará Da Serra", course: "Tecnologia em Gestão do Agronegócio" },
